@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {DA444047-BFD7-484C-A409-24C219267BAB} = s 'MediaInfoShell Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{59785D40-AD25-4E7C-89B2-34C8771461E5}'
+			Version = s '1.0'
+		}
+	}
+}

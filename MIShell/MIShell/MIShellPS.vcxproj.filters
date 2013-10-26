@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{84c2eee4-4ab5-42c7-898f-779d5c8d8be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{c38aad07-eb92-43af-a334-d2362a60e57a}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MIShellps.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MIShell_i.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MIShell_p.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlldata.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

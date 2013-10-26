@@ -1,0 +1,13 @@
+HKCR
+{
+    NoRemove *
+    {
+        NoRemove ShellEx
+        {
+            NoRemove ContextMenuHandlers
+            {
+                ForceRemove MediaInfoShell = s '{DA444047-BFD7-484C-A409-24C219267BAB}'
+            }
+        }
+    }
+}
